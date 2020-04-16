@@ -1,0 +1,12 @@
+RewriteEngine on
+
+RewriteCond %{HTTP_REFERER} !^http://drvideo.com.br/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://drvideo.com.br$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.drvideo.com.br/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.drvideo.com.br$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://drvideo.com.br/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://drvideo.com.br$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.drvideo.com.br/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.drvideo.com.br$      [NC]
+RewriteRule .*\.(jpg|jpeg|gif|png|bmp)$ - [F,NC]
+
